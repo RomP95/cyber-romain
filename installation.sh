@@ -7,4 +7,4 @@ apt-get install python3-pip -y
 
 pip install requests
 pip install tabulate
-pip install fpdf
+pip3 install fpdf --break-system-packages
