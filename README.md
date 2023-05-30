@@ -70,6 +70,17 @@ Sur ce scan nous retrouvons :
 Pour les CVE j’ai utilisé la valeur « url = fhttps://cve.circl.lu/api/last/{num_cve}
 Dans cette ligne, une variable "url" est définie en utilisant une f-string (une syntaxe de formatage de chaîne introduite dans Python 3.6+). La valeur de "url" est construite en concaténant la chaîne de base "https://cve.circl.lu/api/last/" avec la valeur de l'argument "num_cve". Cette URL est utilisée pour accéder à l'API du site CVE de CIRCL afin de récupérer les dernières informations sur les CVE (Common Vulnerabilities and Exposures).
 
+cve-search est accessible via une interface web et une API HTTP. cve-search est une interface permettant de rechercher des informations publiquement connues sur les vulnérabilités de sécurité dans les logiciels et le matériel, ainsi que leurs expositions correspondantes.
+
+cve-search inclut les flux de données suivants :
+
+    Base de données nationale des vulnérabilités du NIST (National Institute of Standards and Technology)
+    Énumération de la plateforme commune (CPE)
+    Énumération des faiblesses communes (CWE)
+    Statistiques d'incidents et classement des menaces du CIRCL (Computer Incident Response Center Luxembourg)
+    toolswatch/vFeed
+
+Ces différentes sources de données permettent à cve-search de fournir des informations détaillées sur les vulnérabilités de sécurité, les logiciels et le matériel concernés, ainsi que les mesures de contournement et les correctifs disponibles. L'interface web et l'API HTTP offrent des moyens pratiques d'accéder à ces informations et de les rechercher selon différents critères.
 
 
 
