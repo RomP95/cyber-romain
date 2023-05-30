@@ -1,7 +1,11 @@
 
-# Project Title
-
-A brief description of what this project does and who it's for
+```bash
+git clone https://github.com/RomP95/cyber-romain/
+cd cyber-romain
+chmod +x installation.sh
+./installation.sh 
+python3 main.py
+```
 
 Dans ce script nous avons le choix de faire plusieurs scans :
 -	Scan offensif qui sera basé sur du nmap avec rapport de scan en envoi mail
